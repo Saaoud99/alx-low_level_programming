@@ -1,30 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-
-/**
-* _strdup - duplicate to new memory space location
-* @str: char
-* Return: 0
-*/
-
-char *_strdup(char *str)
-{
-
-char *aaa;
-int i, r = 0;
-
-if (str == NULL)
-
-return (NULL);
-i = 0;
-while (str[i] != '\0')
-i++;
-aaa = malloc(sizeof(char) * (i + 1));
-
-if (aaa == NULL)
-return (NULL);
-for (r = 0; str[r]; r++)
-aaa[r] = str[r];
-return (aaa);
+int main(){
+	//addition
+	int x;
+	x = divi(4,0);
+	printf("%f",x);
+	//oustraction
+	
+	
 }
+int somme (int x,int y){
+	int z;
+     z = x + y;
+    return z;
+ }
+int divi (int x, int y){
+	int d;
+	if (y != 0){
+	
+	d = x / y;
+
+	return d;
+	}else{
+		return 0;
+	}
+}
+int multi (int x, int y){
+	int m;
+	m = x * y;
+	return m;
+	
+}
+int moin (int x, int y){
+	int n;
+	n = x - y;
+	return n;
+}
+
